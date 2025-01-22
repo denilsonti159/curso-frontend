@@ -1,1 +1,53 @@
 # curso-frontend
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page 08</title>
+    <link rel="stylesheet" type="text/css" href="./css/modulo-08.css">
+</head>
+
+<body>
+
+    <section>
+        <div id="menu-navegacao">
+            <li><a href="#top">Home</a></li>  
+            <li><a href="#contatos">Contatos</a></li>
+            <li><a href="#sobre-mim">Sobre mim</a></li>
+            <li><a href="#projetos">projetos</a></li>
+        </div>
+    </section>
+
+    <section>
+       <div id="sobre-mim">
+            <h1>Sobre Mim</h1>
+
+       </div>
+    </section>
+
+    <section>
+        <div id="projetos">
+            <h2>Meus Projetos</h2> 
+        </div>
+    </section>
+
+    <section class="filtro">
+        <div id="contatos">
+            <div>
+                <h2>Minhas Redes</h2><p>
+                </p>
+                <li><a href="http://wa.me/5527997067219" target="_blank">Whatsapp</a></li>
+                <li><a href="https://pt-br.facebook.com/" target="_blank">Facebook</a></li>
+                <li><a href="https://www.instagram.com/" target="_blank ">Instagram</a></li>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+
+</html>
