@@ -1,0 +1,81 @@
+
+section {
+    margin-bottom: 60px;
+}
+#menu-navegacao {
+    background-color: brown;
+    display:block;
+    
+    width: 100%;
+    height: 60px;
+    font-size: 25px;
+    list-style-type: none;  
+}
+
+#menu-navegacao li {
+    margin: 15px 0px 0px 100px;
+    float:right;
+   
+}
+
+#menu-navegacao a {
+    text-decoration: none;
+    color: #ffffff; 
+}
+
+#sobre-mim {
+    background-color: antiquewhite;
+    width: 80%;
+    height: 700px;
+    margin: auto auto;
+    padding-top: 20px;
+}
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#projetos {
+    width: 100%;
+    height: 800px;
+    background-color: rgb(54, 54, 54);
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#contatos {
+    background-color: antiquewhite;
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+    list-style-type: none;
+}
+
+#contatos li {
+    font-size: 30px;
+    padding-bottom: 15px;   
+}
+
+#contatos a {
+    text-decoration: none;
+    color: #615050;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*Mobile first - Layout responsivo*/
+
+@media (max-width: 425px){
+    div {
+        width: 100%;
+        min-width: 320px;
+    } 
+}

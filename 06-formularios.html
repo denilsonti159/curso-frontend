@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<title>Titulo da pagina exibido no navegador</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">	
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+
+	</head>
+
+<!--- 
+<meta name="viewport" content="width=device-width, initial-scale=1"> == DEIXA A PAGINA AUTO RESPONSIVA
+<div> </div> = Divide a linha de uma forma semantica(igual ao parafrafo)
+<form method="post"> = define uma forma a pagina
+<a href= > </a> = define uma ancora a alguma parte da pagina
+<label> </label> = define uma etiqueta a pagina (um titulo de algum capo que sera preenchido)
+<input> = imputa uma caixa 
+<placeholder="alguma coisa"> mosta a mensagem na caixa criada(usado nos casos de nao ter a label)
+<type="texto" = tranforma a caixa em uma caixa de texto
+<type="email"> = tranforma a caixa em uma caixa de email
+<select> </select> = cria uma caixa de seleção dos intens dentro (um por vez em)
+<option> </option> = cria opções dentro da caixa de select para serem selecionadas
+<selected> = seleciona o item que ira aparecer primeiro no preenchimento
+<type="radio" = Cria uma caixa de seleção (uma por vez se tiver o mesmo nome)
+<type="checkbox">Cria uma caixa de seleção (pode selecionar vaias caixas)
+<type="submit"> = Cria um botao de enviar
+<textarea> </textarea> = imputa uma caixa de texto
+<rows="5"> = inclui o tanto de linha na caixa de texto
+
+  -->
+
+	<body>
+
+		<header>
+			<h2>Fale conosco</h2>
+			<p>Comentario 1</p>
+			<h2>Comentario 2</h2>
+			<p>Comentario 3</p>
+		</header>
+
+		<section>
+			
+			<nav>
+				<ul>
+					<li><a href="05-layouts.html">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="#contato">Contato</a></li>
+				<ul>
+			</nav>
+
+			<article>
+
+				<h1>Título Artigo</h1>
+				<p>Preencha os campos abaixo</p>
+
+				<form method="post">
+					<div>
+						<label for="nome">Nome</label>
+						<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+					</div>
+
+					<div>
+						<label for="email">Email</label>
+						<input type="email" name="email" id="email" placeholder="Digite seu email">
+					</div>
+
+					<div>
+						<label for="mensagem">Mensagem</label>
+						<textarea nome=mensagem id="mensagem" rows="5"></textarea>
+					</div>
+
+					<div>
+						<p>
+							<label>Qual linguagens você prefere?</label>
+							<input type="radio" name="linguagens" value="html"> HTML
+							<input type="radio" name="linguagens" value="css"> CSS
+							<input type="radio" name="linguagens" value="js"> JS
+						</p>
+					</div>
+
+					<div>
+						<p>
+							<label>Quais linguagens você sabe?</label>
+							<input type="checkbox" name="linguagens" value="HTML"> HTML
+							<input type="checkbox" name="linguagens" value="CSS"> CSS
+							<input type="checkbox" name="linguagens" value="JS"> JS
+						</p>
+					</div>
+
+					<div>
+						<label>Qual a sua cor favorita?</label>
+						<select> 
+							<option value="Azul">azul</option>
+							<option value="Verde">Verde</option><br>
+							<option value="Vermelho" selected>Vermelho</option>
+						</select>				
+					</div>
+					<input type="submit"> 
+
+				</form>
+
+			</article>
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Denilson</p>
+		</footer>
+
+	</body>
+</html>

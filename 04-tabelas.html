@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+	<head>
+		<title>HTML - Tabelas</title>
+		<meta charset="UTF-8">
+	</head>
+	
+	<!--- 
+
+	<table></table> = INCLUI TABELA
+		<thead> </thead> = INCLUI A HEAD DA TABELA 
+			<tr></tr> = INCLUI A LINHA NA TABELA
+				<th></th> INCLUI O TITULO DA COLUNA (CRIA UMA COLUNA CENTRALIZADA)
+				<td></td> = INCLUI A COLUNA DA TABELA
+
+		<tbody> </tbody> = INCLUI O CORPO DA TABELA 
+		<tfoot> </tfoot> = INCLUI O RODAPÉ DA TABELA
+
+	align="center" = ALINHA O CONTEUDO NO MEIO
+	align="right" = ALINHA A DIREITA
+	align="left" = ALINHA A ESQUERDA
+	bgcolor="#0000" = DEFINE A COR A APLICAÇÃO DESIGNADA
+	colspan="2" = MESCLA AS COLUNAS (DE ACORDO COM O VALOR ESTABELECIDO)
+	border="1" = DEFINE BORDA A TABELA
+	width="100%" DEFINE A LARGURA EM ¨PORCENTAGEM // width="100" DEFINE A LARGURA EM PIXELS
+	height="90%" DEFINE A ALTURA EM ¨PORCENTAGEM // height="90" DEFINE A ALTURA EM PIXELS 
+
+
+	-->
+
+
+	<body>
+		<h1>Tabelas</h1>
+
+		<table border="1" width="100%">
+			<thead>
+				<tr>
+					<th>Coluna 1</th>
+					<th>Coluna 2</th>
+					<th>Coluna 3</th>
+				</tr>
+				
+			</thead>
+			<tbody>
+				<tr align="center">
+					<td>1A</td>
+					<td>2B</td>
+					<td>3C</td>
+				</tr>
+				<tr>
+					<td align="right">2A</td>
+					<td>2B</td>
+					<td>2C</td>
+				</tr>
+				<tr>
+					<td>3A</td>
+					<td colspan="2">2e3BC</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3">Rodapé da tabela</td>
+				</tr>
+			</tfoot>
+		</table>
+
+		<h2>Tebela com layout</h2>
+
+		<table width="100%">
+			<tr height="90">
+				<td colspan="4" bgcolor="#BBCCEE" align="center">Cabeçalho</td>
+			</tr>
+
+			<tr height="300">
+				<td width="20" bgcolor="#0000FF"></td>
+				<td bgcolor="#DDDDDD">Coluna1</td>
+				<td bgcolor="#EEEEEE">Coluna2</td>
+				<td width="20" bgcolor="0000FF"></td>
+			</tr>
+
+			<tr>
+				<td colspan="4" bgcolor="FF0000" align="center">Rodapé</td>
+			</tr>
+		</table>
+
+	</body>
+</html

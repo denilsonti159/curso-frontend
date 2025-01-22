@@ -1,0 +1,255 @@
+/*
+SELETORES
+
+Raiz - html {
+	Muda tudo dentro do html
+}
+}
+
+Elemento - body, p, a, div {
+	Cada TAG pode virar um seletor de elemento no css
+}
+
+Universal - * {
+	Muda TODOS OS ELEMENTOS da página
+}
+
+Identificador - #id {
+	Pode ser usado uma UNICA vez dentro de uma tag (um id por tag)
+}
+
+Classe - .class {
+	atritui uma classe e ela pode ser usada em VARIAS TAGS
+}
+
+Atributo - [type="text"], [type="email"], textarea {
+	Para esse elemento é possivel aplicar uma regra exclusiva que 
+	afeta apenas o mesmo
+}
+
+UNIDADES
+
+Absolutas
+	pixels (px) - Padrao 
+	pt - 
+
+Relativas
+	porcentagem - %
+	em - indexa a porcentagem relativa ao elemento pai. ex: pai= 20px --> 0.8em = 80% de 20 --> 16px
+	rem (root em) - indexador pai. ex: 1.6rem = 16px
+
+BOX MODEL (TODOS ELEMENTOS TEM UMA)
+
+Elemento - content --> CONTEUDO DO CENTRO
+
+Area de preenchimento - {
+	padding: 10px => 10px 10px 10px 10px; = atribui 10 px para todos os lados
+}
+
+Borda - {
+	border: 0;
+	border-bottom: 1px solid #999;
+	border-top: 1px solid #999;
+	border-left: 1px solid #999;
+	border-right: 1px solid #999;
+}
+
+Margem - {
+	margin: 10px => 10px 10px 10px 10px; = atribui 10 px para todos os lados
+	margin-bottom: Margem aplicado apenas ba parte de BAIXO
+	margin-top: Margem aplicado apenas ba parte de CIMA
+	margin-left: Margem aplicado apenas ba parte de ESQUERDA
+	margin-right: Margem aplicado apenas ba parte de DIREITA
+}
+
+POSICIONAMENTO
+
+	Estático - 
+
+	Relativo - ELE USA COMO REFERENCIA O ELEMENTO E SO AI MUDA E USA ESSA REFERENCIA PARA MUDAR DE LUGAR
+
+	Absoluto - PERDE A REFERENCIA DO ELEMENTO, e PASSA A SE REFERENCIAR A PAGINA
+
+	Fixado -  
+
+	z-index - 
+
+HERANÇA
+
+	1- Sobreposição / sobrescreve
+	2- Aplica a ultima regra
+	3- Prioriza regras específicas (com seletores mais próximos)
+	4- !important - Da prioridade e reescreve o elemento mesmo se ele estiver uma regra específica
+
+COMBINADORES
+	
+	1- (espaço) seletores descendentes
+	2- (>) combinador de seletores filhos
+	3- (+) combinador de elementos irmãos adjacentes / que vem logo na sequencia do elemento referencia
+	4- (~) combinador de elementos irmãos geral / após elemento de referencia 
+	
+PSEUDO-ELEMENTOS/CLASSE
+
+
+RESET
+
+- Cross-browser
+- Diretivas de compilação
+- Padronizar
+- Suporte HTML 4.0 tags
+
+FAZ UMA PRE FORMATAÇÃO DO CODIGO PARA PODER PARA DEIXAR O MAIS PARECIDO EM TODOS OS NAVEGADORES
+
+
+TIPOGRAFIA
+
+- Font: family(familia/tipo), size(tamanho), weight(peso)
+- 
+- 
+- 
+
+CORES
+
+- Color (Voltado mais a alterar a cor do texto)
+- Background (muda a cor do fundo)
+- Hexadecimal (cor mais precisa)
+- Rgb
+- Rgba
+- imagen no background : Ex: 
+	body {
+		background: url('../iamgens/foto.png') center top no-repeat #000000
+}
+
+*/
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;	
+}
+
+/* Style the header */
+header {
+	background-color: #666;
+	padding: 30px;
+	text-align: center;
+	font-size: 40px;
+	color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+	float: left;
+	width: 10%;
+	height: 300px; /* only for demonstration, should be removed */
+	background: #ccc;
+	padding: 20px;
+}
+
+form div {
+	background: #fff;
+	border: 0;
+	border-bottom: 1px solid #f00;
+	border-top: 1px solid #f00;
+	margin: 10px;
+	padding: 10px;
+
+}
+
+label {
+	margin-bottom: 10px;
+	font-size: 17px;
+
+}
+
+[type="text"], [type="email"], textarea, label {
+	width: 100%;
+	display:block;
+}
+
+#primeiro-link a {
+	color: #933;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+ul {
+	background-color: white;
+}
+
+.navegacao {
+	background: #ffffff;
+}
+
+a {
+	text-decoration: none;
+	color: #336;
+}
+
+a:hover {
+	color: #000;
+}
+
+a:active {
+	color:#0f0;
+	background:bbb;
+}
+
+a:visited {
+	color:yellowgreen;
+}
+
+article {
+	float: left;
+	padding: 20px;
+	width: 50%;
+	background-color: #f1f1f1;
+}
+
+/* Clear floats after the columns */
+section:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+	/* Style the footer */
+footer {
+	background-color: #666;
+	padding: 10px;
+	text-align: center;
+	color: white;
+	}
+
+
+label {
+	position: relative; 
+	top:-0px;
+}
+
+header h2 {
+	font-weight: 100;
+}
+
+header > h2 {
+	font-weight: 600;
+}
+
+h2 + p {
+	background: #FF0;
+	color: #333;
+}
+
+header ~ p {
+	text-transform: uppercase;	
+}
+
+
+
